@@ -1,23 +1,22 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	int number;
-	int count = 5;
+	int countOfmath;
+	double answer = 1 + 1;
 
-	cout << "Enter your number: ";
-	cin >> number;
+	cout << "Enter count of 1 + 1:";
+	cin >> countOfmath;
 
-	while (number != 0)
+	for (int i = 1; i < countOfmath; i++)
 	{
-		cout << count << " numb: " << number % 10 << endl;
-		
-		count--;
-
-		number /= 10;
+		answer = 1 + 1 / answer;
 	}
+
+	cout << answer << endl;
 
 	return 0;
 }
